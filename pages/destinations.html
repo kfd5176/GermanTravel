@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agency</title>
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+
+    <!--
+        sets parent directory as base for file navigation
+
+        file paths begin with ../ by default on this page
+    -->
+    <base href="../"> <!-- parent directory -->
+
+    <script src="jquery-3.5.1.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/cardCreate.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- populated by createHeader() in main.js -->
+</header>
+
+<section class='pageContent'>
+    <h1>Search Destination, Flights, Hotels</h1>
+
+    <article class = 'destinationCard'>
+        <a href="pages/flights.html">
+            <img src= "images/flightIcon.png">
+            <section class= 'cardInfo'>
+                <p class='cardLabel'>The Brandenberg Gate</p>
+                <p class='cardDescription'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet nisi, eu maximus metus. Cras consectetur porttitor enim ut rhoncus. Integer vehicula ante neque, ut gravida urna fringilla a. Quisque eros velit, maximus a urna ac, dignissim consequat purus. </p>
+            </section>
+        </a>
+    </article>
+
+    <article class = 'destinationCard'>
+        <img src= "images/Pergamon_Museum.jpg">
+        <section class= 'cardInfo'>
+            <p class="cardLabel">Pergamon Museum</p>
+            <p class="cardDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet nisi, eu maximus metus. Cras consectetur porttitor enim ut rhoncus. Integer vehicula ante neque, ut gravida urna fringilla a. Quisque eros velit, maximus a urna ac, dignissim consequat purus. </p>
+        </section>
+    </article>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<footer id ="footer">
+    <!-- populated by createFooter() in main.js -->
+</footer>
+
+</body>
+
+</html>

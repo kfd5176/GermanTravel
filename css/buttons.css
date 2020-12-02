@@ -1,0 +1,163 @@
+:root{
+	
+	--buttonTiming:300ms;
+}
+
+.customButtonLight,
+.customButtonDark,
+.buttonDisabled {
+	display:inline-block;
+	margin:0px 20px ;
+	/*margin:0;*/
+	padding-left: 20px;
+
+
+	width: 130px;
+	height: auto;
+	background-color: var(--Highlight1);
+
+	background-image: url('../images/icons/icons8-right-50.png');
+	background-size: 18px 17px;
+	background-repeat: no-repeat;
+	background-position: 110px 0px;
+
+
+	color:var(--lightText);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--primaryColor1);
+	border-radius: 10px;
+	position:relative;
+	
+
+
+	
+	box-shadow: 0px 0px black;
+
+	
+	font-size: 14px;
+	font-weight: 100;
+	letter-spacing: 5px;
+
+	text-align: left;
+	
+
+	transition: box-shadow var(--buttonTiming);
+
+
+
+	
+}
+.customButtonDark::after,
+.customButtonLight::after{
+
+	content:'';
+	/*background-image: url('icons/icons8-right-50.png');*/
+	/*background-size: 18px 15px;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: 110px 0px;*/
+
+	
+
+	width:100%;
+	height: 100%;
+	
+	border-radius: 10px;
+	background-color: var(--primaryColor1);
+	position:absolute;
+	z-index: 0;
+
+	top:0; 
+	left:0;
+	box-shadow: inset 0px 0px var(--primaryColor1);
+
+	/*padding-left: 20px;*/
+
+}
+.customButtonLight:hover::after,
+.customButtonDark:hover::after{
+	transition: left var(--buttonTiming),width var(--buttonTiming), box-shadow var(--buttonTiming), transform var(--buttonTiming);
+	width:80%;
+	left:2px;
+	box-shadow: inset -4px 0px var(--primaryColor1);
+	transform: scale(1.05);
+}
+.customButtonDark::after{
+	
+}
+
+.onTop{
+	position:relative;
+	z-index: 2;
+	padding:0;
+	margin:0;
+}
+
+.hoverLock{
+	box-shadow: 3px 3px 2px black;
+	transform-origin:center left;
+	transform: scale(1.005);
+}
+
+.hoverLock::after{
+	content:'';
+	background-image: ;/*url('icons/icons8-right-50.png');*/
+	background-size: 18px 15px;
+	background-repeat: no-repeat;
+	background-position: 110px 0px;
+
+	
+
+	width:90%;
+	height: 100%;
+	border-radius: 10px;
+	background-color: var(--primaryColor1);
+	position:absolute;
+	z-index: 1;
+
+	top:0; 
+	left:0;
+	box-shadow: inset -4px 0px var(--primaryColor2);
+	
+}
+.hoverLock.customButtonDark::after{
+	box-shadow: inset -4px 0px var(--primaryColor2);
+}
+
+.customButtonLight:hover,
+.customButtonDark:hover{
+	/*box-shadow:  3px 2px var(--Highlight1);*/
+	box-shadow: 3px 3px 2px black;
+	transform-origin: center left;
+	transform: scale(1.005);
+
+	transition: transform var(--buttonTiming);
+	
+	
+}
+
+.customButtonLight{
+	background-color: var(--Highlight1);
+	color: var(--darkText);
+
+}
+.customButtonLight::after{
+	background-color: var(--backgroundColor);
+	
+}
+
+.buttonDisabled{
+	background-color: lightgray;
+	color: var(--darkText);
+	text-shadow: 1px 1px var(--darkText);
+	box-shadow: 0 0 black;
+	opacity:.7;
+
+	background-image: none;
+}
+.buttonDisabled::after{
+	background-color: lightgray;
+	color: white;
+	opacity:.5;
+
+}

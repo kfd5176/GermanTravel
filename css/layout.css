@@ -1,0 +1,117 @@
+/*CSS Team*/
+@import "buttons.css";
+@import "nav.css";
+@import "forms.css";
+@import "footer.css";
+@import "destinationCard.css";
+@import "homePage.css";
+@import "contactPage.css";
+/*Color Variable Declarations*/
+
+:root{
+	--backgroundColor: #E5F2FD; /*lightblue*/
+	--primaryColor1:#083B66; 	/*darkblue*/
+	--primaryColor2:#086853;	/*darkgreen*/
+	
+	--Accent3:#B5DEAD;
+
+	--lightText: #DDD;
+	--darkText:#444;
+}
+
+
+body{
+	background-color: var(--backgroundColor);
+	padding: 10px;
+}
+
+/*------------ Header Styles / Layout ------------*/
+header{
+	position:relative;
+}
+header::after {
+	content:'';
+	position: absolute;
+	top:0;
+	left:0;
+
+	width:100%;
+	height:100%;
+
+	background-image: url(../images/BrandenbergGateBanner.jpg);
+	z-index: -1;
+
+	background-size: 100%;
+	background-position: 10% 100%;
+	overflow: hidden;
+	opacity:.3;
+}
+header section{
+	text-align: center;
+	vertical-align: top;
+	/*display: inline-block;*/
+	height:100%;
+	width:90%;
+}
+
+#HeaderLogo{
+	width:80px;
+	height: 80px;
+	/*float:left;*/
+	/* margin-bottom: 8px; */
+	/*display:inline-block;*/
+	float:left;
+
+}
+#HeaderTitle{
+	font-size: 40px;
+	padding-top: 0px;
+	width:100%;
+	color:var(--darkText);
+	text-shadow: 2px 2px 2px var(--backgroundColor);
+	
+
+}
+
+
+
+/*------------ Headings Styles ------------*/
+h1,
+h2,
+h3 {
+	font-family: "Georgia";
+	/*font-weight: 300;*/
+	letter-spacing: 7px;
+	color:#444;
+}
+
+h1{
+	font-size: 27px;
+	font-weight: 100;
+	padding-top:20px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+	margin:0;
+}
+p{
+	font-family: "Arial";
+	font-size: 13px;
+	line-height: 1.5em;
+
+	
+	letter-spacing: 1px;
+
+	
+}
+
+.hide{
+	display:none;
+}
+
+.pageContent.contactUs{
+	padding:20px;
+}
+.pageContent.contactUs textarea{
+	display:block;
+}
+

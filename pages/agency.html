@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Agency</title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css">
+
+		<!-- 
+			sets parent directory as base for file navigation
+
+			file paths begin with ../ by default on this page 
+		-->
+		<base href="../"> <!-- parent directory -->
+
+		<script src="jquery-3.5.1.js"></script>
+
+		<script src="js/main.js"></script>	
+		<script src="js/cardCreate.js"></script>	
+	</head>
+	<body>
+
+		<header>
+			<!-- populated by createHeader() in main.js -->
+		</header>
+
+		<section class='pageContent'>
+			<h1>Search Destination, Flights, Hotels</h1>
+
+			<article class = 'destinationCard'>
+				<a href="pages/flights.html">
+					<img src= "images/flightIcon.png">
+					<section class= 'cardInfo'>
+						<p class='cardLabel'>Flights</p>
+						<p class='cardDescription'>Search, Book, Reschedule & Cancel Flights. </p>
+					</section>
+				</a>
+			</article>
+
+			<article class = 'destinationCard'>
+				<a href = "pages/hotels.html">
+				<img src= "images/hotelIcon.png">
+				<section class= 'cardInfo'>
+					<p class="cardLabel">Hotels</p>
+					<p class="cardDescription">Search, Book, Reschedule & Cancel Flights. Make your stay Memorable </p>
+				</section>
+			</article>
+
+			<article class = 'destinationCard'>
+				<a href= "pages/destinations.html">
+				<img src= "images/DestinationIcon.png">
+				<section class= 'cardInfo'>
+					<p class="cardLabel">Destination</p>
+					<p class="cardDescription">Get to know popular Destination Spots in Germany</p>
+				</section>
+			</article>
+
+
+
+			
+			
+		</section>
+		
+
+		
+
+
+
+		<footer id ="footer">
+			<!-- populated by createFooter() in main.js -->
+		</footer>
+
+	</body>
+
+</html>

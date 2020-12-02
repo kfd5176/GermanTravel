@@ -1,0 +1,58 @@
+nav{
+	
+	background-color: var(--primaryColor1);
+	width: 100%;
+	clear:both;
+	box-shadow: 4px 4px 3px black;
+}
+
+ul{
+	display:flex;
+	padding:0;
+	margin:auto;
+	list-style-type: none;
+	position: relative;
+	font-family: "Arial";
+
+
+	
+}
+
+nav a{
+	margin:0;
+	display:inline-block;
+	text-decoration: none;
+	padding:10px 30px;
+
+	justify-content: flex-start;
+
+	border-right-style: solid;
+	border-right-color: var(--lightText);
+	border-right-width: 1px;
+	border-left-style: solid;
+	border-left-color: var(--lightText);
+	border-left-width: 1px;
+	border-top-style: none;
+	
+	color: var(--lightText);
+	margin:0 30px;
+
+	transition: background-color 400ms, 
+				opacity 400ms, 
+				/*letter-spacing 200ms,*/
+				color 400ms;
+
+}
+
+.login{
+	
+	margin-left: auto;
+}
+
+nav a:hover{
+	background-color: var(--backgroundColor);
+	opacity:.7;
+	color:var(--darkText);
+	/*letter-spacing: 3px;*/
+
+}

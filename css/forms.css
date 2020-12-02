@@ -1,0 +1,124 @@
+:root{
+	--Primary1-Shade2:#b3cde3;
+	--selectedShade1: #FFF9C6;
+	--Highlight1:#e5d80e;
+	
+}
+.loginPageContent{
+	align-content: center;
+	text-align: center;
+}
+.formContainer{
+	width:50%;
+	background-color: var(--Primary1-Shade2);
+	display:inline-block;
+	margin:20px;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 3px 2px 2px black;
+
+}
+
+.formContainer h1{
+	padding:10px;
+	box-shadow: 0 1px var(--darkText);
+}
+
+.formContainer button{
+	float:right;
+}
+
+
+
+
+
+.customForm{
+	position:relative;
+	padding:0;
+	display: block;
+	margin: 10px 15px;
+	box-sizing: border-box;
+
+}
+.customForm p{
+	display:inline-block;
+	font-size: 12px;
+	width:110px;
+
+	border-radius: 20px 0px 0px 20px ;
+	/*background-color: var(--Accent1);*/
+	padding:3px 10px;
+	margin:0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--lightText);
+	color:var(--lightText);
+	background-color: var(--primaryColor1);
+	box-shadow: 3px 2px black;
+	margin-right:10px;
+	text-align: left;
+	
+}
+
+.customForm input[type = 'text'],
+.customForm input[type = 'password']{
+	height:20px;
+	display:inline-block;
+	border-radius: 0px 20px 20px 0px ;
+	background-color: var(--backgroundColor);
+	/*padding:3px 10px;*/
+	margin:0 0;
+	border-style: solid;
+	border-color: var(--primaryColor1);
+	border-width: 1px;
+	box-shadow: 3px 2px black;
+	padding-left: 10px;
+	
+}
+
+#bordered{
+	box-shadow: 4px 2px black;
+
+	border-style: solid;
+	
+	
+	border-color: var(--primaryColor1);
+
+}
+
+.customForm input{
+	color: rgba(13,13,13,.5);
+}
+
+
+/*.customForm input[type = 'text']:focus{
+	background-color: var(--Primary1-Shade2);
+
+
+}*/
+.customForm input[type = 'text']:focus,
+.customForm input[type = 'password']:focus{
+	outline: none;
+	background-color: white;/*var(--selectedShade1)*/;
+	/*background-color: var(--Primary1-Shade2);*/
+	border-color: var(--primaryColor1);
+	border-width: 1px;
+}
+
+.customForm input[type = 'text'].selected{
+	background-color: linear-gradient(var(--Primary1-Shade2),red);
+	border-color: white;
+	border-width: 1px;
+	box-shadow: 2px 1px black;
+
+}
+
+.invalidEntry p{
+	color: #ffc400;
+
+	/*background-color: orange;*/
+}
+.invalidEntry input[type = 'text']{
+	background-color: #ffebeb;
+	border-color: #ffc400;
+}
